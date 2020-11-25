@@ -77,8 +77,6 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-Anna_IMG = "https://ibb.co/GTrSJMD"
-
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Anna is hosted on its own server and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
