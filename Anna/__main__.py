@@ -76,7 +76,7 @@ And the following:
 """.format(
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
-
+ANNA_IMAGE = 'https://i.ibb.co/TLN3T0G/Anna-k-project.jpg'
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Anna is hosted on its own server and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
@@ -189,7 +189,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-                Anna_IMG,
+                ANNA_IMAGE,
                 PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
@@ -215,7 +215,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="Source code",
-                             url="https://github.com/Astrako/Anna")
+                             url="https://github.com/HoldMySoul/Anna")
                      ]]))
     else:
         update.effective_message.reply_text(
